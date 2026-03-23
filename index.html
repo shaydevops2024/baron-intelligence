@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Baron Intelligence — קורסים דיגיטליים פרונטליים לנשים. AI, אוטומציה ואדמין חכם עם אורית לאה ברון." />
+  <meta property="og:title" content="Baron Intelligence | קורסים דיגיטליים לנשים" />
+  <meta property="og:description" content="למדי AI, אוטומציה ועיצוב דיגיטלי — פרונטלי, בקצב שלך, עם תעודה." />
+  <title>Baron Intelligence | קורסים דיגיטליים לנשים</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════════════ -->
+<header>
+  <nav class="navbar" id="navbar" role="navigation" aria-label="ניווט ראשי">
+    <a href="#" class="navbar-logo" aria-label="Baron Intelligence — דף הבית">
+      <span class="navbar-logo-main">Baron <em>Intelligence</em></span>
+    </a>
+
+    <div class="navbar-links" id="navLinks">
+      <a href="#courses">קורסים</a>
+      <a href="#about">אודות</a>
+      <a href="#testimonials">המלצות</a>
+      <a href="#courses" class="navbar-cta">להרשמה ←</a>
+    </div>
+
+    <button
+      class="navbar-hamburger"
+      id="hamburger"
+      onclick="toggleMobileNav()"
+      aria-label="פתח תפריט"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="navbar-mobile-menu" id="mobileMenu" role="menu">
+    <a href="#courses"      onclick="toggleMobileNav()">קורסים</a>
+    <a href="#about"        onclick="toggleMobileNav()">אודות</a>
+    <a href="#testimonials" onclick="toggleMobileNav()">המלצות</a>
+    <a href="#courses"      onclick="toggleMobileNav()">← להרשמה</a>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════════ -->
+<section class="hero" aria-label="כותרת ראשית">
+
+  <div class="hero-geo" aria-hidden="true">
+    <div class="geo-ring geo-ring-1"></div>
+    <div class="geo-ring geo-ring-2"></div>
+    <div class="geo-ring geo-ring-3"></div>
+    <div class="geo-line geo-line-1"></div>
+    <div class="geo-line geo-line-2"></div>
+    <div class="geo-glow geo-glow-1"></div>
+    <div class="geo-glow geo-glow-2"></div>
+  </div>
+
+  <div class="hero-inner">
+
+    <!-- Left: text -->
+    <div class="hero-text">
+      <div class="hero-eyebrow reveal">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        קורסים פרונטליים לנשים חרדיות
+      </div>
+
+      <h1 class="hero-title reveal reveal-delay-1">
+        הטכנולוגיה<br>
+        <span class="gold">שלך,</span>
+        <span class="italic"> בקצב שלך</span>
+      </h1>
+
+      <p class="hero-desc reveal reveal-delay-2">
+        קורסים מעשיים בתחומי AI, אוטומציה ועיצוב דיגיטלי —
+        מותאמים לנשים שרוצות להתקדם מקצועית, בסביבה מכבדת ובקצב נוח.
+      </p>
+
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#courses" class="btn btn-gold">לכל הקורסים ↓</a>
+        <a href="#about"   class="btn btn-ghost-light">אודות אורית לאה</a>
+      </div>
+
+      <div class="hero-stats reveal reveal-delay-4">
+        <div>
+          <div class="hero-stat-num">1,200+</div>
+          <div class="hero-stat-label">בוגרות מרוצות</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">4</div>
+          <div class="hero-stat-label">קורסים פעילים</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">4.9★</div>
+          <div class="hero-stat-label">ממוצע דירוג</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: floating card (hidden on mobile via CSS) -->
+    <div class="hero-float-wrap" aria-hidden="true">
+      <div class="ftag ftag-1">🌟 שיעור חי — היום בשעה 10:00</div>
+      <div class="ftag ftag-2">📜 תעודה מוכרת בסיום</div>
+      <div class="hero-card">
+        <div class="hero-card-head">
+          <div class="hero-card-icon">🤖</div>
+          <div>
+            <div class="hero-card-name">AI לאדמין חכמה</div>
+            <div class="hero-card-sub">12 שיעורים פרונטליים · ירושלים</div>
+          </div>
+        </div>
+        <div class="hero-card-rows">
+          <div class="hcr">
+            <span class="hcr-dot" style="background:#25d366"></span>
+            <span class="hcr-text">ChatGPT למשרד</span>
+            <span class="hcr-status">✓</span>
+          </div>
+          <div class="hcr">
+            <span class="hcr-dot" style="background:#c9973f"></span>
+            <span class="hcr-text">Notion AI</span>
+            <span class="hcr-status">✓</span>
+          </div>
+          <div class="hcr">
+            <span class="hcr-dot" style="background:#8a9ab0"></span>
+            <span class="hcr-text">Canva AI</span>
+            <span class="hcr-status">⏳</span>
+          </div>
+        </div>
+        <div class="hero-card-foot">
+          <div class="hero-card-price">₪890</div>
+          <div class="hero-card-badge">מתחילות</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     TRUST STRIP
+════════════════════════════════════════════════════════════ -->
+<div class="trust-strip" aria-hidden="true">
+  <div class="trust-track">
+    <span class="trust-item"><span class="trust-item-icon">✓</span> קורסים פרונטליים מובנים</span>
+    <span class="trust-item"><span class="trust-item-icon">🏆</span> תעודות מוכרות</span>
+    <span class="trust-item"><span class="trust-item-icon">👩‍💻</span> מדריכות נשים בלבד</span>
+    <span class="trust-item"><span class="trust-item-icon">🔒</span> סביבה צנועה ומכבדת</span>
+    <span class="trust-item"><span class="trust-item-icon">📍</span> ירושלים · בני ברק · מודיעין עילית</span>
+    <span class="trust-item"><span class="trust-item-icon">💬</span> ליווי אישי לאחר הקורס</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="trust-item"><span class="trust-item-icon">✓</span> קורסים פרונטליים מובנים</span>
+    <span class="trust-item"><span class="trust-item-icon">🏆</span> תעודות מוכרות</span>
+    <span class="trust-item"><span class="trust-item-icon">👩‍💻</span> מדריכות נשים בלבד</span>
+    <span class="trust-item"><span class="trust-item-icon">🔒</span> סביבה צנועה ומכבדת</span>
+    <span class="trust-item"><span class="trust-item-icon">📍</span> ירושלים · בני ברק · מודיעין עילית</span>
+    <span class="trust-item"><span class="trust-item-icon">💬</span> ליווי אישי לאחר הקורס</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     COURSES
+════════════════════════════════════════════════════════════ -->
+<section class="section section--cream" id="courses" aria-labelledby="coursesHeading">
+  <div class="section-inner">
+
+    <div class="section-header section-header--split">
+      <div class="reveal">
+        <div class="eyebrow">הקורסים שלנו</div>
+        <h2 class="section-title" id="coursesHeading">
+          בחרי את המסלול<br>המתאים לך
+        </h2>
+      </div>
+      <div class="filter-pills reveal reveal-delay-1" role="group" aria-label="סינון קורסים">
+        <button class="pill active" data-filter="all">הכל</button>
+        <button class="pill" data-filter="ai">🤖 AI</button>
+        <button class="pill" data-filter="automation">⚡ אוטומציה</button>
+        <button class="pill" data-filter="design">🎨 עיצוב</button>
+      </div>
+    </div>
+
+    <div class="courses-grid" id="coursesGrid" role="list" aria-label="רשימת קורסים"></div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════════════════════ -->
+<section class="section section--dark" id="about" aria-labelledby="aboutHeading">
+  <div class="section-inner">
+    <div class="about-grid">
+
+      <div class="about-card reveal">
+        <div class="about-avatar" aria-hidden="true">👩</div>
+        <div class="about-name">אורית לאה ברון</div>
+        <div class="about-role">מייסדת ומדריכה ראשית · Baron Intelligence</div>
+        <p class="about-bio">
+          מומחית לכלי AI ואוטומציה עסקית, עם ניסיון של מעל 8 שנים בהדרכה ובניית תוכניות לימוד.
+          מאמינה שכל אישה יכולה לשלוט בטכנולוגיה — בלי רקע, בלי פחד, ובקצב שלה.
+        </p>
+        <div class="about-stats">
+          <div class="about-stat">
+            <div class="about-stat-num">1,200+</div>
+            <div class="about-stat-label">בוגרות</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">4</div>
+            <div class="about-stat-label">קורסים</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">8+</div>
+            <div class="about-stat-label">שנות ניסיון</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">4.9★</div>
+            <div class="about-stat-label">דירוג ממוצע</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <div class="eyebrow" style="color:var(--gold)">למה Baron Intelligence</div>
+        <h2 class="section-title on-dark" id="aboutHeading" style="margin-bottom:1.8rem;">
+          למדנו את הכאב —<br>בנינו את הפתרון
+        </h2>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon">🏛️</div>
+            <div>
+              <div class="about-feature-title">פרונטלי ואישי</div>
+              <div class="about-feature-text">שיעורים פנים-אל-פנים בסביבה נשית מכבדת, עם מדריכה שמכירה את הצרכים שלך.</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">🛠️</div>
+            <div>
+              <div class="about-feature-title">כלים מעשיים מהיום הראשון</div>
+              <div class="about-feature-text">אין תיאוריה מיותרת. ישר לכלים: ChatGPT, Notion AI, Zapier, Canva AI ועוד.</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">📜</div>
+            <div>
+              <div class="about-feature-title">תעודה מוכרת בסיום</div>
+              <div class="about-feature-text">כל קורס מסתיים בתעודת גמר שתסייע לך להתקדם בשוק העבודה.</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">👑</div>
+            <div>
+              <div class="about-feature-title">קהילה תומכת</div>
+              <div class="about-feature-text">הצטרפי לקהילת בוגרות שמשתפות ומסייעות — גם אחרי הקורס.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════════════════════ -->
+<section class="section section--cream2" id="testimonials" aria-labelledby="testimonialsHeading">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="eyebrow">מה אומרות הבוגרות</div>
+      <h2 class="section-title" id="testimonialsHeading">המלצות אמיתיות</h2>
+    </div>
+    <div class="testimonials-grid" id="testimonialsGrid"></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     CTA BAND
+════════════════════════════════════════════════════════════ -->
+<section class="cta-band" aria-labelledby="ctaHeading">
+  <div class="cta-band-inner reveal">
+    <h2 class="cta-title" id="ctaHeading">
+      מוכנה להתחיל?<br>
+      <span>הצעד הראשון הוא שלך</span>
+    </h2>
+    <p class="cta-sub">
+      הצטרפי לאלפי נשים שכבר שינו את הקריירה שלהן עם כלי AI מעשיים.
+      שלחי הודעה ונמצא יחד את הקורס הנכון עבורך.
+    </p>
+    <div class="cta-btns">
+      <a href="#courses" class="btn btn-gold">לכל הקורסים</a>
+      <a
+        href="https://wa.me/972000000000?text=%D7%94%D7%99%D7%99%20%D7%90%D7%95%D7%A8%D7%99%D7%AA%20%D7%9C%D7%90%D7%94%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%99%D7%95%D7%AA%D7%A8%20%D7%A2%D7%9C%20%D7%94%D7%A7%D7%95%D7%A8%D7%A1%D7%99%D7%9D"
+        class="btn btn-ghost-light"
+        target="_blank"
+        rel="noopener"
+      >💬 שלחי הודעה</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">Baron <em>Intelligence</em></div>
+        <p class="footer-tagline">
+          קורסים דיגיטליים פרונטליים לנשים חרדיות —<br>
+          ללמוד, לצמוח, להצליח בעולם הטכנולוגיה.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h5>קורסים</h5>
+        <a href="#courses">AI לאדמין חכמה</a>
+        <a href="#courses">ChatGPT למשרד</a>
+        <a href="#courses">אוטומציה עסקית</a>
+        <a href="#courses">Canva AI</a>
+      </div>
+      <div class="footer-col">
+        <h5>מידע</h5>
+        <a href="#about">אודות אורית לאה</a>
+        <a href="#testimonials">המלצות</a>
+        <a href="mailto:info@baron-intelligence.co.il">צרי קשר</a>
+        <a href="#">תנאי שימוש</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Baron Intelligence · אורית לאה ברון · כל הזכויות שמורות</span>
+      <span>📍 ירושלים · בני ברק · מודיעין עילית</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     MODAL
+════════════════════════════════════════════════════════════ -->
+<div
+  class="modal-overlay"
+  id="modalOverlay"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalTitle"
+>
+  <div class="modal" id="modal" tabindex="-1">
+    <div class="modal-color-bar" id="modalColorBar"></div>
+    <div class="modal-header">
+      <div>
+        <div class="modal-cat" id="modalCat"></div>
+        <h2 class="modal-title" id="modalTitle"></h2>
+      </div>
+      <button class="modal-close" onclick="closeModal()" aria-label="סגור">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-thumb" id="modalThumb">
+        <div class="modal-thumb-dots" aria-hidden="true"></div>
+        <span class="modal-thumb-icon" aria-hidden="true"></span>
+      </div>
+      <div class="modal-price-row">
+        <span class="modal-price-now" id="modalPriceNow"></span>
+        <span class="modal-price-was" id="modalPriceWas"></span>
+        <span class="modal-discount-tag" id="modalDiscount"></span>
+      </div>
+      <div class="modal-chips" id="modalChips"></div>
+      <p class="modal-desc" id="modalDesc"></p>
+      <h3 class="modal-syllabus-title">📋 סילבוס הקורס</h3>
+      <ul class="syllabus-list" id="modalSyllabus" aria-label="נושאי הקורס"></ul>
+      <div class="modal-actions">
+        <a class="btn btn-wa" id="modalWaBtn" href="#" target="_blank" rel="noopener">
+          💬 שלחי הודעה להרשמה
+        </a>
+        <button class="btn btn-ghost-dark" onclick="closeModal()">המשך לגלוש</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- TOAST -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SCRIPTS — data first, then logic
+════════════════════════════════════════════════════════════ -->
+<script src="data/courses.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Render testimonials after DOM + data are ready
+  document.addEventListener("DOMContentLoaded", () => {
+    const grid = document.getElementById("testimonialsGrid");
+    TESTIMONIALS.forEach((t, i) => {
+      const el = document.createElement("article");
+      el.className = `tcard reveal reveal-delay-${Math.min(i + 1, 4)}`;
+      el.innerHTML = `
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-text">״${t.text}״</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar" style="background:${t.bg}">${t.emoji}</div>
+          <div>
+            <div class="tcard-name">${t.name}</div>
+            <div class="tcard-role">${t.role}</div>
+          </div>
+        </div>`;
+      grid.appendChild(el);
+    });
+    observeReveal();
+  });
+</script>
+
+</body>
+</html>
+
