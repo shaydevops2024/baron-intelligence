@@ -147,4 +147,3 @@ const TESTIMONIALS = [
     bg: "#ffe0e8",
   },
 ];
-
